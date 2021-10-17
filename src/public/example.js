@@ -3,4 +3,7 @@ import FormHermes from '../FormHermes.ts'
 const form = document.querySelector('form')
 const pre = document.querySelector('pre')
 
-const { subscribed } = new FormHermes(form, () => console.log('hello'))
+const renderState = state => pre.innerText = JSON.stringify(state)
+
+const { state } = new FormHermes(form, renderState)
+renderState(state)
