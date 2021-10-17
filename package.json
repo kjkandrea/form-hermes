@@ -1,0 +1,21 @@
+{
+  "name": "form-hermes",
+  "version": "1.0.0",
+  "description": "form oninput easy detect.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "npx lite-server --baseDir='src'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kjkandrea/form-hermes.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kjkandrea/form-hermes/issues"
+  },
+  "homepage": "https://github.com/kjkandrea/form-hermes#readme"
+}
