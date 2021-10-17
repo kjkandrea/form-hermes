@@ -1,7 +1,15 @@
 class Hermes {
   constructor (formElement) {
-    console.log(formElement)
-    this.name = 'hermes'
+    const els = this.getFieldNodeList(formElement)
+    console.log(els)
+  }
+
+  getFieldNodeList(formElement) {
+    const detectFieldNodeElementNames = ['input, select']
+
+    return detectFieldNodeElementNames.reduce((nodeList, nodeName) =>
+      nodeList.concat(...formElement.querySelectorAll(nodeName))
+    , [])
   }
 }
 
