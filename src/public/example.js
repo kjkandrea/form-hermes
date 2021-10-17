@@ -1,4 +1,4 @@
-import FormHermes from '../FormHermes.js'
+import FormHermes from '../FormHermes.ts'
 
 const form = document.getElementById('example-form')
 

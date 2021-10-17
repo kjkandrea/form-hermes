@@ -1,8 +1,3 @@
 {
-  "compilerOptions": {
-    "module": "ES6",
-    "moduleResolution": "Node",
-    "esModuleInterop": true,
-    "sourceMap": true,
-  }
+  "extends": "@tsconfig/recommended/tsconfig.json"
 }
