@@ -1,4 +1,4 @@
-class Hermes {
+class FormHermes {
   constructor (formElement) {
     const els = this.getFieldNodeList(formElement)
     this.state = this.getState(els)
@@ -19,4 +19,4 @@ class Hermes {
   }
 }
 
-export default Hermes;
+export default FormHermes;
