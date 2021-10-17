@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "dev": "npx lite-server --baseDir='src'"
+    "dev": "webpack serve --open"
   },
   "repository": {
     "type": "git",
@@ -17,5 +17,17 @@
   "bugs": {
     "url": "https://github.com/kjkandrea/form-hermes/issues"
   },
-  "homepage": "https://github.com/kjkandrea/form-hermes#readme"
+  "homepage": "https://github.com/kjkandrea/form-hermes#readme",
+  "devDependencies": {
+    "@babel/core": "^7.15.8",
+    "@babel/preset-env": "^7.15.8",
+    "@tsconfig/recommended": "^1.0.1",
+    "babel-loader": "^8.2.2",
+    "html-webpack-plugin": "^5.4.0",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.4.4",
+    "webpack": "^5.58.2",
+    "webpack-cli": "^4.9.0",
+    "webpack-dev-server": "^4.3.1"
+  }
 }
