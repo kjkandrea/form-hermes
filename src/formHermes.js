@@ -1,7 +1,11 @@
 class FormHermes {
   constructor (formElement) {
     const els = this.getFieldNodeList(formElement)
-    this.state = this.getState(els)
+    this._state = this.getState(els)
+  }
+
+  get state() {
+    return this._state
   }
 
   getFieldNodeList(formElement) {
