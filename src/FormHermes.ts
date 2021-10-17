@@ -14,11 +14,11 @@ class FormHermes {
 		if (subscriber) this.subscribed(subscriber)
 	}
 
-	public subscribed (subscriber: Subscriber) {
+	public subscribed(subscriber: Subscriber) {
 		this._subscribed.push(subscriber)
 	}
 
-	private publish () {
+	private publish() {
 		this._subscribed.forEach(subscriber => subscriber(this.state))
 	}
 
