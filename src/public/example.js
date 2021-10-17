@@ -1,7 +1,6 @@
 import FormHermes from '../FormHermes.ts'
 
 const form = document.querySelector('form')
+const pre = document.querySelector('pre')
 
-const { state } = new FormHermes(form)
-
-console.log(state)
+const { subscribed } = new FormHermes(form, () => console.log('hello'))
