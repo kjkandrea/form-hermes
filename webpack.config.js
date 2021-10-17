@@ -3,7 +3,7 @@ const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./src/public/example.js",
+  entry: "./src/FormHermes.ts",
   output: {
     path: path.join(__dirname, "/dist"),
     filename: "bundle.js",
