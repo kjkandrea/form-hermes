@@ -1,6 +1,6 @@
 import FormHermes from '../FormHermes.ts'
 
-const form = document.getElementById('example-form')
+const form = document.querySelector('form')
 
 const { state } = new FormHermes(form)
 
