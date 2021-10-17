@@ -1,5 +1,5 @@
-type DetectNode = HTMLInputElement|HTMLSelectElement;
+type DetectNode = HTMLInputElement|HTMLSelectElement|HTMLTextAreaElement;
 
 export type DetectNodeList = NodeListOf<DetectNode>
 
-export type ArrayLikedNodeList = Array<HTMLInputElement|HTMLSelectElement>
+export type ArrayLikedNodeList = Array<DetectNode>

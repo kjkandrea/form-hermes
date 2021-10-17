@@ -32,7 +32,7 @@ class FormHermes {
 	}
 
 	private getFieldNodeList(formElement: HTMLFormElement): ArrayLikedNodeList {
-		const detectFieldNodeElementNames = ['input, select']
+		const detectFieldNodeElementNames = ['input', 'select', 'textarea']
 
 		return detectFieldNodeElementNames.reduce((nodeList: ArrayLikedNodeList, nodeName) => {
 			const nodes = formElement.querySelectorAll(nodeName) as DetectNodeList;
